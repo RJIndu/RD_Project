@@ -1,0 +1,26 @@
+<nb-card class="on">
+  <div class="icon-container">
+    <div class="icon status-{{type}}">
+      <ng-content></ng-content>
+    </div>
+  </div>
+
+  <div class="details">
+    <div class="title h5">{{ title }}</div>
+	<div style="float: right;color:red;" class="title">₹{{ price }}</div>
+    <div class="status paragraph-2">
+      <div class="form-inline">
+        <nb-select selected="1" size="tiny">                      
+          <nb-option value="1"> Qty: 1</nb-option>
+          <nb-option value="2"> Qty: 2</nb-option>
+        </nb-select>
+        &nbsp;&nbsp;&nbsp;
+        <button size="tiny" type="submit" nbButton status="primary" ghost>Delete</button>
+      </div>
+    </div>
+  </div>
+
+  
+
+</nb-card>
+

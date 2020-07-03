@@ -1,0 +1,15 @@
+service: rd-app
+
+provider:
+  name: aws
+  runtime: nodejs12.x
+  stage: dev
+  region: us-east-2
+  
+
+functions:
+  app:
+    handler: ./app/routes/app-routes.handler
+    events:
+      - http: ANY /
+      - http: 'ANY {proxy+}'

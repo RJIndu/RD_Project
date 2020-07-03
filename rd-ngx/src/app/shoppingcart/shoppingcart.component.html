@@ -1,0 +1,47 @@
+<nb-card size="large">
+  <nb-card-header>
+    <b>Shopping Cart</b>
+  </nb-card-header>
+  <nb-card-body>
+   
+        <div class="row">
+          <div class="col-md-9">
+            <nb-list
+                nbInfiniteList
+                listenWindowScroll
+                >
+
+                <nb-list-item>
+                  
+                  <ngx-product-list title="Product Name 1" type="primary" price="400">
+                    <i ngClass="nb-coffee-maker"></i>
+                  </ngx-product-list>
+                  <ngx-product-list title="Product Name 2" type="warning"  price="200">
+                    <i ngClass="nb-coffee-maker"></i>
+                  </ngx-product-list>
+                  <ngx-product-list title="Product Name 3" type="success"  price="300">
+                    <i ngClass="nb-coffee-maker"></i>
+                  </ngx-product-list>
+                  
+                  <!-- <span ><b>Product Name 1</b></span>
+                  <i class="nb-coffee-maker"></i> -->
+                  
+                <!-- </nb-list-item> -->
+                <!-- <nb-list-item >
+                  Product Name 2 -->
+                </nb-list-item> 
+              </nb-list>
+          </div>
+          <div class="col-md-3">
+            <div>Subtotal (2 items): ₹1,082</div><br/>
+            <button  nbButton size="small" status="warning">
+              Proceed to Buy
+            </button>
+          </div>
+        </div>
+        
+
+      
+    
+  </nb-card-body>
+</nb-card>
